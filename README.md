@@ -5,7 +5,7 @@ This is a React-based web application for sending text and media statuses to dif
 
 ## Demo
 
-<video src="assets/Demo.mp4" controls></video>
+<video src="https://github.com/munirrani/whatsapp-status-sender-webapp/raw/refs/heads/main/assets/Demo.mp4" controls></video>
 
 
 ## Features

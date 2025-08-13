@@ -1,0 +1,18 @@
+services:
+  webapp:
+    # Build the image using the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Map port 5173 on the host to port 5173 in the container for Vite dev server
+    ports:
+      - "5173:5173"
+    # Mount source code as volume for hot reloading
+    volumes:
+      - .:/app
+      - /app/node_modules
+    # Ensure the container restarts if it crashes
+    restart: always
+    # Set the environment variable for the Vite development server
+    env_file:
+      - .env
